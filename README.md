@@ -41,13 +41,10 @@ Btw: f***k ufw and docker incompatibilities.
   - `nano /etc/netplan/99_config.yaml`
   - add
     ```
-    network:
-      version: 2
-      renderer: networkd
-      network:
-        dummy-devices:
-          dummy0:
-            addresses:
-              - 192.168.42.1/24
+   network:
+    dummy-devices:
+    dummy0:
+      addresses:
+        - 192.168.42.1/24
     ```
   - 
