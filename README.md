@@ -38,13 +38,18 @@ Btw: f***k ufw and docker incompatibilities.
 - `ip addr add 192.168.42.1 dev dummy0`
 - `ip link set dummy0 up`
 - make it permanent:
-  - `nano /etc/netplan/99_config.yaml`
-  - add
+  - `nano /etc/netplan/99_config.yaml`, add:  
     ```
-   network:
-    dummy-devices:
-    dummy0:
-      addresses:
-        - 192.168.42.1/24
-    ```
+    network:
+      dummy-devices:
+        dummy0:
+          addresses:
+            - 192.168.42.1/24
+     ```
+  - `netplan apply`
   - 
+ 
+  -  
+    
+  - 
+ 
