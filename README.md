@@ -33,6 +33,21 @@ At first we tried a nice containerized install of https://github.com/hwdsl2/dock
 - do custom run of `ikev2.sh`, adding 10.8.2.1 as dns server
 - be sure to add another client, don't run you clients with identical config (will lead to routing issues, you have been warned!)
 
+# Firewall Rules
+Well, #5, #6 are somehow redundant (#7). #2 also. Delete...
+```
+ To                         Action      From
+     --                         ------      ----
+[ 1] 22/tcp                     ALLOW IN    Anywhere
+[ 2] Anywhere on dummy0         ALLOW IN    192.168.42.0/24
+[ 3] 500,4500/udp               ALLOW IN    Anywhere
+[ 4] 10.8.2.1/tcp               ALLOW IN    10.8.2.0/24/tcp
+[ 5] 10.8.2.0/24 53/udp         ALLOW IN    192.168.43.0/24
+[ 6] 10.8.2.0/24 8080/tcp       ALLOW IN    192.168.43.0/24
+[ 7] Anywhere                   ALLOW IN    192.168.43.0/24
+[ 8] 22/tcp (v6)                ALLOW IN    Anywhere (v6)
+[ 9] 500,4500/udp (v6)          ALLOW IN    Anywhere (v6)
+```
 
 
 # stuff that didn't work out:
