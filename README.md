@@ -27,7 +27,11 @@ At first we tried a nice containerized install of https://github.com/hwdsl2/dock
   - configure admin interface to bind to 10.8.2.1:8080
   - configure dns server to bind to 10.8.2.1:53
   
-# Set up 
+# VPN Server
+- run the setup script
+- remove ikev2
+- do custom run of `ikev2.sh`, adding 10.8.2.1 as dns server
+- be sure to add another client, don't run you clients with identical config (will lead to routing issues, you have been warned!)
 
 
 
