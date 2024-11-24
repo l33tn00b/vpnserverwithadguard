@@ -1,7 +1,7 @@
 # vpnserverwithadguard
-Get an ipsec VPN server up and running with AdGuard on Ubuntu24.01  
-Idea was: Use docker VPN container, Adguard will run as snap package.
-Btw: f***k ufw and docker incompatibilities.
+Get an ipsec VPN server up and running with AdGuard on Ubuntu24.01    
+Idea was: Use docker VPN container, Adguard will run as snap package.  
+Btw: f***k ufw and docker incompatibilities.  
 At first we tried a nice containerized install of https://github.com/hwdsl2/docker-ipsec-vpn-server which gave us routing issues between this container and the snap package for AdGuard Home. No way out. So a non-containerized version von the vpn server did the trick: https://github.com/hwdsl2/setup-ipsec-vpn/
 
 # Basic
@@ -25,7 +25,7 @@ At first we tried a nice containerized install of https://github.com/hwdsl2/dock
 - `snap install adguard-home`
 - edit `/var/snap/adguard-home/current/AdGuardHome.yaml`
   - configure admin interface to bind to 10.8.2.1:8080
-  - configure dns server to bind to 10.8.2.53
+  - configure dns server to bind to 10.8.2.1:53
   
 # Set up 
 
