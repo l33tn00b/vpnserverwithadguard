@@ -53,6 +53,10 @@ Well, #5, #6 are somehow redundant (#7). #2 also. Delete...
 [ 9] 500,4500/udp (v6)          ALLOW IN    Anywhere (v6)
 ```
 
+# Make it work with tinymdm
+## Settings for always-on VPN
+![grafik](https://github.com/user-attachments/assets/d1fd7ad7-0183-489f-b638-e69bbad65e4b)
+
 
 # stuff that didn't work out:
 ## VPN Container
