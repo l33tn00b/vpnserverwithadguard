@@ -34,6 +34,9 @@ At first we tried a nice containerized install of https://github.com/hwdsl2/dock
 - be sure to add another client, don't run your clients with identical config (will lead to routing issues, you have been warned!)
 - edit `/etc/ipsec.conf` to exclude your local subnets from virtual-private
 
+# adding clients
+`ikev2.sh --addclient [client name]`
+
 # Firewall Rules
 Well, #5, #6 are somehow redundant (#7). #2 also. Delete...
 ```
