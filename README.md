@@ -4,6 +4,8 @@ Idea was: Use docker hwdsl2 VPN container, Adguard will run as snap package.
 Btw: f***k ufw and docker incompatibilities.  
 At first we tried a nice containerized install of https://github.com/hwdsl2/docker-ipsec-vpn-server which gave us routing issues between this container and the snap package for AdGuard Home. No way out. So a non-containerized version von the vpn server did the trick: https://github.com/hwdsl2/setup-ipsec-vpn/
 
+**IF YOU PREVIOUSLY INSTALLED THE DOCKER CONTAINER MAKE SURE IT HAS BEEN DELETED** or at least disable auto start container! **YOU HAVE BEEN WARNED**
+
 # Basic
 - nano `/etc/apt/apt.conf.d/50unattended-upgrades` to make automatic reboot after updates
 - install docker as per https://docs.docker.com/engine/install/ubuntu/
