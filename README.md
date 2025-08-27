@@ -35,6 +35,7 @@ At first we tried a nice containerized install of https://github.com/hwdsl2/dock
 - do custom run of `ikev2.sh`, adding 10.8.2.1 as dns server
 - be sure to add another client, don't run your clients with identical config (will lead to routing issues, you have been warned!)
 - edit `/etc/ipsec.conf` to exclude your local subnets from virtual-private
+- `ipsec restart` (libreswan) and `systemctl status ipsec`
 
 # adding clients
 `ikev2.sh --addclient [client name]`
