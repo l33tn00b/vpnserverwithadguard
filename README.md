@@ -1,4 +1,4 @@
-# vpnserverwithadguard
+# IKEv2 VPN Server with Adguard
 Get an ipsec VPN server up and running with AdGuard on Ubuntu24.01    
 Idea was: Use docker hwdsl2 VPN container, Adguard will run as snap package.  
 Btw: f***k ufw and docker incompatibilities.  
