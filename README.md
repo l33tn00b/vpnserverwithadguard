@@ -68,6 +68,11 @@ Well, #5, #6 are somehow redundant (#7). #2 also. Delete...
 # Strongswan Android Client  
 Why that? Because we needed something manageable (see TinyMDM).
 
+# User Management
+See https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/ikev2-howto.md#manage-ikev2-clients
+- List configured clients: `ikev2.sh --listclients`
+- Add client, configure options: `sudo ikev2.sh`, choose Option 1)
+
 # stuff that didn't work out:
 ## VPN Container
 - `nano vpn.env`
