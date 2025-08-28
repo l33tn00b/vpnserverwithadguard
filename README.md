@@ -1,8 +1,13 @@
 # IKEv2 VPN Server with Adguard
-Get an ipsec VPN server up and running with AdGuard on Ubuntu24.01    
+Get an ipsec VPN server up and running with AdGuard on Ubuntu24.01.
+Setup providing filtered internet access for roadwarrior clients.  
+Runs with Windows and managed Android Clients (Strongswan Android client).
+
 Idea was: Use docker hwdsl2 VPN container, Adguard will run as snap package.  
 Btw: f***k ufw and docker incompatibilities.  
 At first we tried a nice containerized install of https://github.com/hwdsl2/docker-ipsec-vpn-server which gave us routing issues between this container and the snap package for AdGuard Home. No way out. So a non-containerized version von the vpn server did the trick: https://github.com/hwdsl2/setup-ipsec-vpn/
+
+
 
 **IF YOU PREVIOUSLY INSTALLED THE DOCKER CONTAINER MAKE SURE IT HAS BEEN DELETED** or at least disable auto start container! **YOU HAVE BEEN WARNED**
 
@@ -60,6 +65,8 @@ Well, #5, #6 are somehow redundant (#7). #2 also. Delete...
 ## Settings for always-on VPN
 ![grafik](https://github.com/user-attachments/assets/d1fd7ad7-0183-489f-b638-e69bbad65e4b)
 
+# Strongswan Android Client  
+Why that? Because we needed something manageable (see TinyMDM).
 
 # stuff that didn't work out:
 ## VPN Container
