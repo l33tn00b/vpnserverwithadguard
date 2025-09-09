@@ -66,7 +66,10 @@ Well, #5, #6 are somehow redundant (#7). #2 also. Delete...
 ![grafik](https://github.com/user-attachments/assets/d1fd7ad7-0183-489f-b638-e69bbad65e4b)
 
 # Strongswan Android Client  
-Why that? Because we needed something manageable (see TinyMDM).
+Why that? Because we needed something manageable (see TinyMDM).  
+Settings are not pushed to clients (but transferred via config files).
+<img width="1189" height="743" alt="grafik" src="https://github.com/user-attachments/assets/e95d5104-0422-4b67-af7c-7b1fb976c9aa" />
+
 
 # User Management
 See https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/ikev2-howto.md#manage-ikev2-clients
